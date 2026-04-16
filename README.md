@@ -8,6 +8,23 @@ This is a containerized version of [Buildozer](https://buildozer.readthedocs.io/
 - git
 - Linux
 
+## Installation
+
+Clone the git repository to the desired location.
+
+```bash
+git clone https://github.com/real-codemeteor/buildozer-contianer.git ~/buildozer
+```
+
+Now create an alias to the ```buildozer.sh``` script.
+
+```bash
+alias buildozer='~/buildozer/buildozer.sh'
+```
+
 ## Usage
 
+After installation, you can simply run buildozer as how you normaly would.
+The first time the container image will be build, after this it should behave like the native buildozer program.
 
+On more info on how to use buildozer, refer to the [documentation](https://buildozer.readthedocs.io/en/latest).
