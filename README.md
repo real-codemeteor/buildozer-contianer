@@ -25,6 +25,6 @@ alias buildozer='~/buildozer/buildozer.sh'
 ## Usage
 
 After installation, you can simply run buildozer as how you normaly would.
-The first time the container image will be build, after this it should behave like the native buildozer program.
+The first time the container image will be pulled, after this it should behave like the native buildozer program.
 
 On more info on how to use buildozer, refer to the [documentation](https://buildozer.readthedocs.io/en/latest).
