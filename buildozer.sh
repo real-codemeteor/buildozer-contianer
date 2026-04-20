@@ -13,9 +13,10 @@ if [ -z "$(docker images -q realcodemeteor/buildozer-container:v0.1.0 2> /dev/nu
     docker pull realcodemeteor/buildozer-container:v0.1.0
 fi
 
-if [ ! -d /tmp/.buldozer ]; then
-    mkdir /tmp/.buldozer
+if [ ! -d /tmp/.buildozer ]; then
+    echo "Creating /tmp/.buildozer"
+    mkdir /tmp/.buildozer
 fi
 
-docker run --interactive --privileged -v /dev/bus/usb:/dev/bus/usb --tty --rm --volume ${PWD}:/home/ubuntu/src --volume ${HOME}/.android:/home/ubuntu/.android --volume /tmp/.buldozer:/home/ubuntu/.buildozer realcodemeteor/buildozer-container:v0.1.0 buildozer $@
+docker run --interactive --privileged -v /dev/bus/usb:/dev/bus/usb --tty --rm --volume ${PWD}:/home/ubuntu/src --volume ${HOME}/.android:/home/ubuntu/.android --volume /tmp/.buildozer:/home/ubuntu/.buildozer realcodemeteor/buildozer-container:v0.1.0 buildozer $@
 
